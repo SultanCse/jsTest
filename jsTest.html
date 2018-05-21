@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- change html content with js-->
+    <p id="demo">This text will be changed</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <br>
+
+    <!-- change attribute value with js-->
+    <button type="button" onclick='document.getElementById("light").src="image/pic_bulbon.gif"'>LightON</button>
+    <img id="light" src="image/pic_bulboff.gif" style="width:100px">
+    <button type="button" onclick='document.getElementById("light").src="image/pic_bulboff.gif"'>LightOFF</button>
+
+    <!-- change css value with js-->
+    <br><br>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">change my size</button>
+    <!-- JavaScript Can Hide/Show HTML Elements -->
+    <br><br>    
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide Me!</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">show Me!</button>
+
+    
+</body>
+</html>
